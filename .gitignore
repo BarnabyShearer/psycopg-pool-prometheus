@@ -1,5 +1,9 @@
+
 *.py[oc]
-.tox
-.coverage
+/build
+/dist
 *.egg-info
-*.whl
+/.cache
+docs/_build/
+.coverage
+.tox
