@@ -30,7 +30,7 @@ addopts = "-p no:cacheprovider --doctest-modules -v"
 [tool.tox]
 legacy_tox_ini = """
 [tox]
-isolated_build = True
+isolated_build = true
 envlist = py3{7,8,9,10}
 
 [gh-actions]
