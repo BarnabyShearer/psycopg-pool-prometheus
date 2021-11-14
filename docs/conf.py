@@ -3,7 +3,7 @@
 
 extensions = ["sphinxcontrib.autoprogram", "sphinx.ext.autodoc"]
 
-project = "Exposes the pool stats maintained by psycopg3's connection pool to prometheus."
+project = "Expose metrics maintained by psycopg3's connection pool to prometheus."
 copyright = "2021, Barnaby Shearer"
 author = "Barnaby Shearer"
 
