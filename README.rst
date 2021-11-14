@@ -7,6 +7,6 @@ psycopg-pool-prometheus
 .. image:: https://badge.fury.io/py/psycopg-pool-prometheus.svg
     :target: https://badge.fury.io/py/psycopg-pool-prometheus
 
-Exposes the pool stats maintained by psycopg3's connection pool to prometheus.
+Expose metrics maintained by psycopg3's connection pool to prometheus.
 
 
