@@ -8,7 +8,7 @@ Expose metrics maintained by psycopg3's connection pool to prometheus.
    :caption: Contents:
 
    install
-   psycopg-pool-prometheus
+   psycopg_pool_prometheus
 
 Indices and tables
 ==================
