@@ -9,4 +9,10 @@ psycopg-pool-prometheus
 
 Expose metrics maintained by psycopg3's connection pool to prometheus.
 
+Install
+-------
+
+::
+
+    pip install psycopg-pool-prometheus
 
