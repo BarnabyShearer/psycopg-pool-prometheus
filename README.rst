@@ -14,5 +14,5 @@ Install
 
 ::
 
-    pip install psycopg-pool-prometheus
+    python3 -m pip install psycopg-pool-prometheus
 
