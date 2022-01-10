@@ -10,7 +10,7 @@ import psycopg_pool_prometheus
 
 def test_get_stats() -> None:
     """Test we can read Stats."""
-    assert ConnectionPool(min_size=0).get_stats()["pool_size"] == 0
+    assert ConnectionPool(min_size=0, max_size=1).get_stats()["pool_size"] == 0
 
 
 def test_register() -> None:
