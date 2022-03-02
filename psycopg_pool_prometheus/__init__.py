@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import Iterator
 
-from prometheus_client.core import REGISTRY, GaugeMetricFamily  # type: ignore
+from prometheus_client.core import REGISTRY, GaugeMetricFamily
 from psycopg_pool import AsyncConnectionPool, ConnectionPool
 
 
@@ -15,6 +15,8 @@ def register(pool: ConnectionPool | AsyncConnectionPool) -> None:
         def collect(self) -> Iterator[GaugeMetricFamily]:
             """Expose psycopg Pool metrics to Prometheus."""
             for key, value in pool.get_stats().items():
-                yield GaugeMetricFamily(f"psycopg_pool_{key}", None, value=value)
+                yield GaugeMetricFamily(  # type: ignore
+                    f"psycopg_pool_{key}", None, value=value
+                )
 
-    REGISTRY.register(_PoolCollector())
+    REGISTRY.register(_PoolCollector())  # type: ignore
