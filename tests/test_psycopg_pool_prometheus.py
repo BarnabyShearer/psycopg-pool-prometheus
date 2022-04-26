@@ -18,5 +18,5 @@ def test_register() -> None:
     pool = MagicMock(spec=ConnectionPool)
     pool.get_stats.return_value = {"foo": 1}
     psycopg_pool_prometheus.register(pool)
-    metrics = (m.name for m in REGISTRY.collect())  # type: ignore  # pragma: no branch
+    metrics = (m.name for m in REGISTRY.collect())  # pragma: no branch
     assert "psycopg_pool_foo" in metrics
